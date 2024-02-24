@@ -46,8 +46,8 @@ class ProductController {
     }
     deleteProduct = async (req, res) => {
         try {
-            const { pid } = req.params
-            const result = await this.service.deleteProduct({_id: pid})
+            const { pid } = req.params           
+            const result = await this.service.deleteProduct(pid)
             res.send({status: 'success', payload: result})
         } catch (error) {
             res.status(500).send({message: error.message})

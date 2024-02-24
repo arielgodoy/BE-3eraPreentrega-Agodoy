@@ -12,7 +12,7 @@ const appRouter = require('./routes/index.js');
 const fetch = require('node-fetch');
 const session = require('express-session');
 
-const ProductDaoMongo = require('./dao/ProductDaoMongo.js.js');
+const ProductDaoMongo = require('./dao/ProductDaoMongo.js');
 const productDaoMongo = new ProductDaoMongo();
 
 
